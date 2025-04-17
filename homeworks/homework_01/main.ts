@@ -27,7 +27,6 @@
     let b2: boolean = false;
     console.log(b2);
 }
-
 {
     let firstName: string = 'Bogdan';
     let middleName: string = 'Volodymyrovich';
@@ -57,6 +56,7 @@
 //----------------------------- HW2 ---------------------------------------
 
 // Масиви та об'єкти
+
 // #67kfznmiMl
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 {
@@ -72,8 +72,8 @@
     console.log(arr[8]);
     console.log(arr[9]);
 }
-
 // #LARqoUj5I
+
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 {
     type BookType = {
@@ -97,8 +97,8 @@
         genre: 'genre3'
     }
 }
-
 //#sA3Gg1sCp
+
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors.Поле "автори"-являється масивом.
 // Кожен автор має поля name та age.
 {
@@ -140,8 +140,8 @@
         ]
     }
 }
-
 //#jCHFnEbdmFd
+
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password.
 // Вивести в консоль пароль кожного користувача
 {
@@ -166,8 +166,8 @@
         console.log(user);
     }
 }
-
 //#coYydZuaeEB
+
 // - описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів.
 // Як зробити цей масив - вам потрібно подумати. Нормальних варіантів опису - 2.
 // Варіант, коли в вас буде одновимірний масив з 21 значенням вичключаємо одразу
@@ -193,8 +193,8 @@
         { dayName : 'Sunday', temps: {morning: 0, day: 5, evening: 2}}
     ]
 }
-
 //#bAUsaq6LI
+
 // - Є змінна х, якій ви надаєте довільне числове значення.
 // Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
 // Перевірте  скрипт при a, що дорівнює 1, 0, -3
@@ -207,8 +207,8 @@
         console.log('Невірно');
     }
 }
-
 //#3ckURgvs
+
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 {
@@ -224,8 +224,8 @@
         console.log('Четверта чверть');
     }
 }
-
 //#UMoNq4biWGe
+
 // - У змінній day дано якесь число від 1 до 31.
 // Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 {
@@ -239,8 +239,8 @@
         console.log('Третя декада');
     }
 }
-
 //#KzrtqyQ
+
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня
 // і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 {
@@ -273,8 +273,8 @@
             break;
     }
 }
-
 //#uwsz1RnTQJ1
+
 // - Користувач вводить або має два числа.
 // Потрібно знайти та вивести максимальне число з тих двох .
 // Також потрібно врахувати коли введені рівні числа.
@@ -291,8 +291,8 @@
         console.log('Numbers are equal!');
     }
 }
-
 //#iBvqtjEm
+
 // - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).
 // Напишіть код який,буде присвоювати змінній х значення "default"
 // якщо ви намагаєтесь присвоїти в неї falsy-значення (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
@@ -304,8 +304,8 @@
         x = 'default';
     }
 }
-
 //#awLXL6TBzg
+
 // - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
 // За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 {
@@ -329,21 +329,21 @@
         }
     }
 }
-
 //-------------------------------- HW3 -------------------------------------
+
 // #y7crMeFwHcS
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 for(let i = 0; i < 10; i++){
     document.write(`<div>div</div>`);
 }
-
 // #TYj7ncx
+
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 for(let i = 0; i < 10; i++){
     document.write(`<div>div - ${i}</div>`);
 }
-
 // #uzkt71dp
+
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 {
     let i:number = 0;
@@ -353,8 +353,8 @@ for(let i = 0; i < 10; i++){
         i++;
     }
 }
-
 // #OeT7t3uUMFi
+
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 {
     let i:number = 0;
@@ -364,8 +364,8 @@ for(let i = 0; i < 10; i++){
         i++;
     }
 }
-
 //#vLSZKMlO
+
 // - Використовуючи данні з масиву, за допомоги document.write та циклу побудувати структуру по шаблону
 // ШАБЛОН:
 //  <ul>
@@ -386,8 +386,8 @@ for(let i = 0; i < 10; i++){
     }
     document.write(`</ul>`);
 }
-
 // #Hdjws7E
+
 // Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
@@ -433,8 +433,8 @@ for(let i = 0; i < 10; i++){
         document.write(`</div>`);
     }
 }
-
 // #4WrHwFTEop0 є масив users
+
 //  за допомоги циклу вивести:
 //  - користувачів зі статусом true
 //  - користувачів зі статусом false
@@ -477,8 +477,8 @@ for(let i = 0; i < 10; i++){
         }
     }
 }
-
 //-------------------------------------------- HW4 ----------------------------
+
 // #I2XsG6f
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 {
@@ -492,8 +492,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${sRectangle(a, b)} = area of square`);
 }
-
 //#ETGAxbEn8l
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 {
     const PI:number = 3.14;
@@ -505,8 +505,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${sCircle(r)} = area of circle`);
 }
-
 //#Mbiz5K4yFe7
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 {
     const PI:number = 3.14;
@@ -520,8 +520,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${sCylinder(r,h)} = area of cylinder`);
 }
-
 //#SIdMd0hQ
+
 // - створити функцію яка приймає масив та виводить кожен його елемент
 {
     let arr:any[] = [1, 2, 3, 4, 5, 'asdf', true];
@@ -532,8 +532,8 @@ for(let i = 0; i < 10; i++){
     }
     arrayPrint(arr);
 }
-
 //#59g0IsA
+
 // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
 {
     let text :string | null = prompt('Enter text!');
@@ -542,8 +542,8 @@ for(let i = 0; i < 10; i++){
     }
     pPrint(text);
 }
-
 //#hOL6126
+
 // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write.
 // Текст li задати через аргумент всім однаковий
 {
@@ -557,8 +557,8 @@ for(let i = 0; i < 10; i++){
     }
     listPrint(text);
 }
-
 //#0Kxco1edSN
+
 // - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
 {
@@ -574,8 +574,8 @@ for(let i = 0; i < 10; i++){
     }
     listArgPrint(text, liCount);
 }
-
 //#gEFoxMMO
+
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
 // та будує для них список (ul li) та виводить його через document.write
 {
@@ -589,8 +589,8 @@ for(let i = 0; i < 10; i++){
     }
     arrPrint(arr);
 }
-
 //#bovDJDTIjt
+
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
 {
@@ -616,8 +616,8 @@ for(let i = 0; i < 10; i++){
     }
     objArrPrint(users);
 }
-
 //#pghbnSB
+
 // - створити функцію яка повертає найменьше число з масиву
 {
     let arr:number[] = [1, 5, 3, 9, 0, -1, -5];
@@ -632,8 +632,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${findMin(arr)} - minimal number from array`);
 }
-
 //#EKRNVPM
+
 // - створити функцію sum(arr) яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 // Приклад sum([1,2,10]) //->13
 {
@@ -647,8 +647,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${sumArr(arr)} - sum of array`);
 }
-
 //#kpsbSQCt2Lf
+
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 {
@@ -663,8 +663,8 @@ for(let i = 0; i < 10; i++){
     swap(arr, index1, index2)
     console.log(`${arr} - swapped array`);
 }
-
 //#mkGDenYnNjn
+
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
 {
@@ -685,8 +685,8 @@ for(let i = 0; i < 10; i++){
     let result:number = exchange(10000, currencyValues,'USD');
     console.log(result);
 }
-
 //----------------------------------------- HW5 ---------------------------------------
+
 // Тут ті самі завдання, що і в занятті про базові функції, але зробити їх потрібно за допомоги стрілочних функцій
 // #I2XsG6f
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
@@ -699,8 +699,8 @@ for(let i = 0; i < 10; i++){
     let sRectangle = (a:number, b:number) :number => a * b;
     console.log(`${sRectangle(a, b)} = area of square`);
 }
-
 //#ETGAxbEn8l
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 {
     const PI:number = 3.14;
@@ -710,8 +710,8 @@ for(let i = 0; i < 10; i++){
     let sCircle = (r:number) :number => PI * (r * r);
     console.log(`${sCircle(r)} = area of circle`);
 }
-
 //#Mbiz5K4yFe7
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 {
     const PI:number = 3.14;
@@ -723,8 +723,8 @@ for(let i = 0; i < 10; i++){
     let sCylinder = (r:number, h:number) :number => (2 * PI * r * h) + 2 * (PI * (r * r));
     console.log(`${sCylinder(r,h)} = area of cylinder`);
 }
-
 //#SIdMd0hQ
+
 // - створити функцію яка приймає масив та виводить кожен його елемент
 {
     let arr:any[] = [1, 2, 3, 4, 5, 'asdf', true];
@@ -735,16 +735,16 @@ for(let i = 0; i < 10; i++){
     }
     arrayPrint(arr);
 }
-
 //#59g0IsA
+
 // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
 {
     let text:string | null = prompt('Enter text!');
     let pPrint = (text:string | null) :void =>  document.write(`<p>${text}</p>`);
     pPrint(text);
 }
-
 //#hOL6126
+
 // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write.
 // Текст li задати через аргумент всім однаковий
 {
@@ -758,8 +758,8 @@ for(let i = 0; i < 10; i++){
     }
     listPrint(text);
 }
-
 //#0Kxco1edSN
+
 // - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
 {
@@ -775,8 +775,8 @@ for(let i = 0; i < 10; i++){
     }
     listArgPrint(text, liCount);
 }
-
 //#gEFoxMMO
+
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
 // та будує для них список (ul li) та виводить його через document.write
 {
@@ -789,8 +789,8 @@ for(let i = 0; i < 10; i++){
     }
     arrPrint(123, 456, 789, 'asd', 'qwe', 'zxc', true, false);
 }
-
 //#bovDJDTIjt
+
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
 {
@@ -817,8 +817,8 @@ for(let i = 0; i < 10; i++){
     }
     objArrPrint(users);
 }
-
 //#pghbnSB
+
 // - створити функцію яка повертає найменьше число з масиву
 {
     let findMin = (...arr:number[]) :number => {
@@ -832,8 +832,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${findMin(1, 5, 3, 9, 0, -1, -5)} - minimal number from array`);
 }
-
 //#EKRNVPM
+
 // - створити функцію sum(arr) яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 // Приклад sum([1,2,10]) //->13
 {
@@ -846,8 +846,8 @@ for(let i = 0; i < 10; i++){
     }
     console.log(`${sumArr(1, 5, 3, 9, 0, -1, -3)} - sum of array`);
 }
-
 //#kpsbSQCt2Lf
+
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 {
@@ -861,8 +861,8 @@ for(let i = 0; i < 10; i++){
     swap(arr, 0, arr.length - 1)
     console.log(`${arr} - swapped array`);
 }
-
 //#mkGDenYnNjn
+
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
 {
@@ -883,8 +883,8 @@ for(let i = 0; i < 10; i++){
     let result:number = exchange(10000, currencyValues,'USD');
     console.log(result);
 }
-
 //--------------------------------------- HW6 -----------------------------------
+
 // #dFeorS3m7u
 // - Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
@@ -896,8 +896,8 @@ for(let i = 0; i < 10; i++){
     }
     strLength('hello world', 'lorem ipsum', 'javascript is cool');
 }
-
 //#8lld9HMxXWB
+
 // - Перевести до великого регістру наступні стрінгові значення
 //       'hello world', 'lorem ipsum', 'javascript is cool'
 {
@@ -908,8 +908,8 @@ for(let i = 0; i < 10; i++){
     }
     strLength('hello world', 'lorem ipsum', 'javascript is cool');
 }
-
 //#ClDsAm7xba7
+
 // - Перевести до нижнього регістру настипні стрінгові значення
 //       'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
 {
@@ -920,8 +920,8 @@ for(let i = 0; i < 10; i++){
     }
     strLength('HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL');
 }
-
 //#0b89BkYZwu
+
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 {
     let dirtyString:string = ' dirty string   ';
@@ -932,8 +932,8 @@ for(let i = 0; i < 10; i++){
     let replace = (str:string, index:number, char:string):string => str.substring(0, index + 1) + char + str.substring(index + 1);
     console.log(replace(newStr, index, ' '));
 }
-
 //#bfoJuse4ZzP
+
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
 //     let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
@@ -943,8 +943,8 @@ for(let i = 0; i < 10; i++){
     let arr:string[] = stringToArray(str);
     console.log(arr);
 }
-
 //#Rbr5kEQ
+
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
 {
     let arr:number[] = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
@@ -953,8 +953,8 @@ for(let i = 0; i < 10; i++){
     });
     console.log(mappedArray);
 }
-
 //#5hqyKTfmc
+
 // - створити функцію sortNums(array,direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
 // або навпаки в залежності від значення аргументу direction.
 // let nums = [11,21,3];
@@ -973,8 +973,8 @@ for(let i = 0; i < 10; i++){
     console.log(sortNums(nums, 'ascending'));
     console.log(sortNums(nums, 'descending'));
 }
-
 //#yo06d74c1C
+
 // - є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -1017,8 +1017,8 @@ for(let i = 0; i < 10; i++){
     });
     console.log(mappedArray);
 }
-
 //#bolvdlhP
+
 //  описати колоду карт (від 6 до туза без джокерів)
 //  - знайти піковий туз
 //  - всі шістки
@@ -1092,8 +1092,8 @@ let deck:CardsType = [
         && card.value !== '8'));
     console.log(foundClubs);
 }
-
 //#EP5I1UUzAX
+
 // Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
 // {
 //     spades:[],
@@ -1124,8 +1124,8 @@ let deck:CardsType = [
     }, {spades: [], diamonds: [], hearts: [], clubs: []});
     console.log(reducedDeck);
 }
-
 //#4LJn7zBx
+
 // взяти з arrays.js масив coursesArray
 // --написати пошук всіх об'єктів, в яких в modules є sass
 // --написати пошук всіх об'єктів, в яких в modules є docker
@@ -1212,5 +1212,271 @@ let deck:CardsType = [
     let filteredArrayDocker:CoursesType = coursesArray.filter(course => course.modules.includes('docker'));
     console.log(filteredArrayDocker);
 }
-
 //--------------------------------------------- HW7 -----------------------------------
+
+//#XjJuucOMR0
+// - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// створити пустий масив, наповнити його 10 об'єктами new User(....)
+
+class User {
+    id: number;
+    name: string;
+    surname: string;
+    email: string;
+    phone: number
+
+    constructor(id: number, name: string, surname: string, email: string, phone: number) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
+
+}
+let users: User[] = [];
+for (let i = 0; i < 10; i++) {
+    users.push(new User(i + 1, `${i + 1}_name`, `${i + 1}_surname`, `${i + 1}_@email.com`, i + 100));
+}
+console.log(users);
+
+//#2ikXsE2WiKZ
+// - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+let filteredUsers:User[] = users.filter(user => user.id % 2 === 0);
+console.log(filteredUsers);
+
+//#pOeHKct
+// - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+{
+    let sortedUsers:User[] = filteredUsers.sort((user1:User, user2:User):number => user1.id - user2.id);
+    console.log(sortedUsers);
+}
+
+//#nkMXISv
+// - створити конструктор для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+// створити пустий масив, наповнити його 10 об'єктами Client
+
+class Client {
+    public order: Order[];
+    constructor(public id:number, public name:string, public surname:string, public email:string, public phone:number, ...order:Order[]){
+
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
+    }
+}
+class Order{
+    constructor(public id:number, public title:string, public price:number) {
+        this.id = id;
+        this.title = title;
+        this.price = price
+    }
+}
+let clients:Client[] = [];
+for (let i = 0; i < 10; i++) {
+    clients.push(new Client(i + 1, `${i + 1}_name`, `${i + 1}_surname`, `${i + 1}@email`, i + 38098000000, new Order(i, 'tovar2', i * 10)));
+    for (let j = 10; j > i; j--) {
+        clients[i].order.push(new Order(j, `tovar${j - i}`, j * 10)); //adding to order array for next task
+    }
+}
+console.log(clients);
+
+//#8abtVjRv
+// - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+{
+    let sortedClients:Client[] = clients.sort((client1:Client, client2:Client):number => client1.order.length - client2.order.length);
+    console.log(sortedClients);
+}
+
+//#vV9a6584I5
+// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
+// максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+//     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+//     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+//     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+//     -- changeYear (newValue) - змінює рік випуску на значення newValue
+//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+{
+    class Driver{
+        constructor(public name:string, public surname:string) {
+            this.name = name;
+            this.surname = surname;
+        }
+    }
+    class Car{
+        public driver:Driver;
+        constructor(public model:string, public manufacturer:string, public year:number, public maxSpeed:number, public engineVolume:string, driver:Driver) {
+            this.model = model;
+            this.manufacturer = manufacturer;
+            this.year = year;
+            this.maxSpeed = maxSpeed;
+            this.engineVolume = engineVolume;
+            this.driver = driver;
+        }
+
+        drive():void{ console.log(`driving with speed ${this.maxSpeed}km per hour`); }
+        info():void{
+            for (const field in this) {
+                console.log(`${field} - `, this[field]);
+            }
+        }
+        increaseMaxSpeed(newSpeed:number):void{ this.maxSpeed += newSpeed; }
+        changeYear(newValue:number):void { this.year = newValue; }
+        addDriver(driver:Driver):void { this.driver = driver; }
+    }
+    let car = new Car('model S plaid', 'Tesla', 2025, 280, '1020hp', new Driver('bodya', 'pupi'));
+    car.drive();
+    car.increaseMaxSpeed(20);
+    car.changeYear(2030);
+    car.addDriver(new Driver('vasya', 'vasin'));
+    car.info();
+}
+
+//#zg6Fifnqig
+// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+{
+    class Cinderella{
+        constructor(public name:string, public age:number, public footSize:number) {
+            this.name = name;
+            this.age = age;
+            this.footSize = footSize;
+        }
+    }
+    let arrayOfCinderella:Cinderella[] = [];
+    for(let i = 0; i < 10; i++){
+        arrayOfCinderella.push(new Cinderella(`${i+1}_name`, i + 18, i + 35));
+    }
+
+    class Prince{
+        constructor(public name:string, public age:number, public slipperFoundSize:number) {
+            this.name = name;
+            this.age = age;
+            this.slipperFoundSize = slipperFoundSize;
+        }
+    }
+    let prince:Prince = new Prince('Charming', 18, 39);
+//loop task
+    for (let cinderella of arrayOfCinderella) {
+        if(cinderella.footSize === prince.slipperFoundSize){
+            console.log(cinderella,` must be with `, prince);
+            break;
+        }
+    }
+//find task
+    prince.slipperFoundSize = 42;
+    let foundCinderella:Cinderella | undefined = arrayOfCinderella.find(cinderella => cinderella.footSize === prince.slipperFoundSize);
+    console.log(foundCinderella,` must be with `, prince);
+}
+
+//#gsKLAsNWM
+// *Через Array.prototype. створити власний foreach, filter
+{
+    class MyArray<T> extends Array<T>{
+        customForEach (callback: (value: T, index: number, array: T[]) => void ){
+            for (let i = 0; i < this.length; i++) {
+                if(i in this){
+                    callback(this[i], i, this);
+                }
+            }
+        }
+
+        customFilter (callback: (value: T) => unknown ):MyArray<T> {
+            const result:MyArray<T> = new MyArray<T>();
+            for (const value of this) {
+                if(callback(value)){
+                    result.push(value);
+                }
+            }
+            return result;
+        }
+    }
+
+    //testing custom forEach
+    const arr:MyArray<number> = new MyArray<number>(1, 5, 19);
+    arr.customForEach((value:number, index:number, array:number[]):void => {
+        console.log(`Value: ${value}, Index: ${index}, Array: ${array}`);
+    });
+
+    //testing custom filter
+    const newArr:MyArray<number> = arr.customFilter((value:number):boolean => value !== 5);
+    console.log(newArr); // [1, 19]
+}
+
+//--------------------------------------------- HW8 -----------------------------------------
+//#AiN5CoUQ
+// Створити функцію, яка робить глибоку копію об'єкту.
+// Додати перевірки на undefined, null, NaN.
+// Подумати і реалізувати логіку, в якій кінцевий об'єкт буде мати функції,які в нього були до цього моменту.
+{
+    interface IObj  {
+        name: string;
+        skills: string[];
+        greeting: () => void;
+    }
+    let obj:IObj = {
+        name: 'max',
+        skills: ['html', 'css'],
+        greeting: function ():void {
+            console.log(`say HI!`);
+        }
+    }
+    let deepCopy = (obj:IObj) => {
+        let resultObj;
+        if(obj){
+            let funcArr = [];
+            for (let field in obj) {
+                if(typeof obj.greeting === "function"){
+                    let funcCopy = obj.greeting.bind({});
+                    funcArr.push({funcCopy, field});
+                }
+            }
+            let str:string = JSON.stringify(obj);
+            resultObj = JSON.parse(str);
+            for (const func of funcArr) {
+                resultObj[func.field] = func.funcCopy;
+            }
+            return resultObj;
+        }else{
+            console.log('Invalid obj!');
+            return undefined;
+        }
+    }
+    deepCopy(obj).greeting();
+}
+
+//#iz6emEsP2BA
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration
+// Зробити все ВИКЛЮЧНО за допомоги інлайн конструкції
+{
+    interface ICourse {
+        title: string;
+        monthDuration: number
+    }
+    type CoursesType = ICourse[];
+    let coursesAndDurationArray:CoursesType = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+    ];
+    let courses:CoursesType = coursesAndDurationArray;
+    let mappedArr:CoursesType = courses.map((value:ICourse, index:number) => ({id: index + 1, ...value}));
+    console.log(mappedArr);
+}

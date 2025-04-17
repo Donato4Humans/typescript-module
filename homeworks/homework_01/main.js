@@ -1041,3 +1041,256 @@ let deck = [
     let filteredArrayDocker = coursesArray.filter(course => course.modules.includes('docker'));
     console.log(filteredArrayDocker);
 }
+//--------------------------------------------- HW7 -----------------------------------
+//#XjJuucOMR0
+// - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// створити пустий масив, наповнити його 10 об'єктами new User(....)
+class User {
+    constructor(id, name, surname, email, phone) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
+}
+let users = [];
+for (let i = 0; i < 10; i++) {
+    users.push(new User(i + 1, `${i + 1}_name`, `${i + 1}_surname`, `${i + 1}_@email.com`, i + 100));
+}
+console.log(users);
+//#2ikXsE2WiKZ
+// - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+let filteredUsers = users.filter(user => user.id % 2 === 0);
+console.log(filteredUsers);
+//#pOeHKct
+// - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+{
+    let sortedUsers = filteredUsers.sort((user1, user2) => user1.id - user2.id);
+    console.log(sortedUsers);
+}
+//#nkMXISv
+// - створити конструктор для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+// створити пустий масив, наповнити його 10 об'єктами Client
+class Client {
+    constructor(id, name, surname, email, phone, ...order) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
+    }
+}
+class Order {
+    constructor(id, title, price) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.id = id;
+        this.title = title;
+        this.price = price;
+    }
+}
+let clients = [];
+for (let i = 0; i < 10; i++) {
+    clients.push(new Client(i + 1, `${i + 1}_name`, `${i + 1}_surname`, `${i + 1}@email`, i + 38098000000, new Order(i, 'tovar2', i * 10)));
+    for (let j = 10; j > i; j--) {
+        clients[i].order.push(new Order(j, `tovar${j - i}`, j * 10)); //adding to order array for next task
+    }
+}
+console.log(clients);
+//#8abtVjRv
+// - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+{
+    let sortedClients = clients.sort((client1, client2) => client1.order.length - client2.order.length);
+    console.log(sortedClients);
+}
+//#vV9a6584I5
+// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
+// максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+//     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+//     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+//     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+//     -- changeYear (newValue) - змінює рік випуску на значення newValue
+//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+{
+    class Driver {
+        constructor(name, surname) {
+            this.name = name;
+            this.surname = surname;
+            this.name = name;
+            this.surname = surname;
+        }
+    }
+    class Car {
+        constructor(model, manufacturer, year, maxSpeed, engineVolume, driver) {
+            this.model = model;
+            this.manufacturer = manufacturer;
+            this.year = year;
+            this.maxSpeed = maxSpeed;
+            this.engineVolume = engineVolume;
+            this.model = model;
+            this.manufacturer = manufacturer;
+            this.year = year;
+            this.maxSpeed = maxSpeed;
+            this.engineVolume = engineVolume;
+            this.driver = driver;
+        }
+        drive() { console.log(`driving with speed ${this.maxSpeed}km per hour`); }
+        info() {
+            for (const field in this) {
+                console.log(`${field} - `, this[field]);
+            }
+        }
+        increaseMaxSpeed(newSpeed) { this.maxSpeed += newSpeed; }
+        changeYear(newValue) { this.year = newValue; }
+        addDriver(driver) { this.driver = driver; }
+    }
+    let car = new Car('model S plaid', 'Tesla', 2025, 280, '1020hp', new Driver('bodya', 'pupi'));
+    car.drive();
+    car.increaseMaxSpeed(20);
+    car.changeYear(2030);
+    car.addDriver(new Driver('vasya', 'vasin'));
+    car.info();
+}
+//#zg6Fifnqig
+// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+{
+    class Cinderella {
+        constructor(name, age, footSize) {
+            this.name = name;
+            this.age = age;
+            this.footSize = footSize;
+            this.name = name;
+            this.age = age;
+            this.footSize = footSize;
+        }
+    }
+    let arrayOfCinderella = [];
+    for (let i = 0; i < 10; i++) {
+        arrayOfCinderella.push(new Cinderella(`${i + 1}_name`, i + 18, i + 35));
+    }
+    class Prince {
+        constructor(name, age, slipperFoundSize) {
+            this.name = name;
+            this.age = age;
+            this.slipperFoundSize = slipperFoundSize;
+            this.name = name;
+            this.age = age;
+            this.slipperFoundSize = slipperFoundSize;
+        }
+    }
+    let prince = new Prince('Charming', 18, 39);
+    //loop task
+    for (let cinderella of arrayOfCinderella) {
+        if (cinderella.footSize === prince.slipperFoundSize) {
+            console.log(cinderella, ` must be with `, prince);
+            break;
+        }
+    }
+    //find task
+    prince.slipperFoundSize = 42;
+    let foundCinderella = arrayOfCinderella.find(cinderella => cinderella.footSize === prince.slipperFoundSize);
+    console.log(foundCinderella, ` must be with `, prince);
+}
+//#gsKLAsNWM
+// *Через Array.prototype. створити власний foreach, filter
+{
+    class MyArray extends Array {
+        customForEach(callback) {
+            for (let i = 0; i < this.length; i++) {
+                if (i in this) {
+                    callback(this[i], i, this);
+                }
+            }
+        }
+        customFilter(callback) {
+            const result = new MyArray();
+            for (const value of this) {
+                if (callback(value)) {
+                    result.push(value);
+                }
+            }
+            return result;
+        }
+    }
+    //testing custom forEach
+    const arr = new MyArray(1, 5, 19);
+    arr.customForEach((value, index, array) => {
+        console.log(`Value: ${value}, Index: ${index}, Array: ${array}`);
+    });
+    //testing custom filter
+    const newArr = arr.customFilter((value) => value !== 5);
+    console.log(newArr); // [1, 19]
+}
+//--------------------------------------------- HW8 -----------------------------------------
+//#AiN5CoUQ
+// Створити функцію, яка робить глибоку копію об'єкту.
+// Додати перевірки на undefined, null, NaN.
+// Подумати і реалізувати логіку, в якій кінцевий об'єкт буде мати функції,які в нього були до цього моменту.
+{
+    let obj = {
+        name: 'max',
+        skills: ['html', 'css'],
+        greeting: function () {
+            console.log(`say HI!`);
+        }
+    };
+    let deepCopy = (obj) => {
+        let resultObj;
+        if (obj) {
+            let funcArr = [];
+            for (let field in obj) {
+                if (typeof obj.greeting === "function") {
+                    let funcCopy = obj.greeting.bind({});
+                    funcArr.push({ funcCopy, field });
+                }
+            }
+            let str = JSON.stringify(obj);
+            resultObj = JSON.parse(str);
+            for (const func of funcArr) {
+                resultObj[func.field] = func.funcCopy;
+            }
+            return resultObj;
+        }
+        else {
+            console.log('Invalid obj!');
+            return undefined;
+        }
+    };
+    deepCopy(obj).greeting();
+}
+//#iz6emEsP2BA
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration
+// Зробити все ВИКЛЮЧНО за допомоги інлайн конструкції
+{
+    let coursesAndDurationArray = [
+        { title: 'JavaScript Complex', monthDuration: 5 },
+        { title: 'Java Complex', monthDuration: 6 },
+        { title: 'Python Complex', monthDuration: 6 },
+        { title: 'QA Complex', monthDuration: 4 },
+        { title: 'FullStack', monthDuration: 7 },
+        { title: 'Frontend', monthDuration: 4 }
+    ];
+    let courses = coursesAndDurationArray;
+    let mappedArr = courses.map((value, index) => ({ id: index + 1, ...value }));
+    console.log(mappedArr);
+}
